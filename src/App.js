@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Cards from './components/cards';
+import Cover from './components/cover';
+import Create from './components/createPost';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex items-center flex-col bg-black min-h-[100vh] space-y-10'>
+      <Cover />
+      <Create />
+      <Cards />
     </div>
   );
 }
